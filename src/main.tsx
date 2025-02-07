@@ -1,6 +1,6 @@
 import { createRoot } from "react-dom/client";
 import "./styles/global.css";
-import { HashRouter } from "react-router";
+import { BrowserRouter } from "react-router";
 import AppRoutes from "./routes/AppRoutes";
 import { ConfigProvider, notification } from "antd";
 import ptBR from "antd/es/locale/pt_BR";
@@ -17,9 +17,9 @@ notification.config({
 const App = () => {
   return (
     <ConfigProvider locale={ptBR}>
-      <HashRouter>
+      <BrowserRouter basename="/controlepessoal">
         <AppRoutes />
-      </HashRouter>
+      </BrowserRouter>
     </ConfigProvider>
   );
 };

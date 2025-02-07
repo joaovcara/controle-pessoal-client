@@ -28,7 +28,7 @@ export const Logout = () => {
 
   // Redireciona para a rota de login
   setTimeout(() => {
-    window.location.href = "/login";
+    window.location.href = "/controlepessoal/login";
   }, 1000);
 };
 
