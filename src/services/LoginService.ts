@@ -29,7 +29,7 @@ export const Logout = () => {
   // Redireciona para a rota de login
   setTimeout(() => {
     window.location.href = "/controlepessoal/login";
-  }, 1000);
+  }, 2000);
 };
 
 /**

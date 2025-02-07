@@ -21,6 +21,7 @@ const MenuPrincipal: React.FC<MenuPrincipalProps> = ({ collapsed, setCollapsed }
 
   return (
     <Menu
+      mode="inline"
       inlineCollapsed={collapsed}
       items={menuItems}
       onClick={handleMenuClick}
